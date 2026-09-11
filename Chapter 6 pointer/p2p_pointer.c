@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+    int i = 5;
+    int *j = &i;
+    int **k = &j;
+
+    printf("The value of i is %d\n", i);
+    printf("The value of i is %d\n", *j);
+    printf("The value of i is %d\n",*(&i)); // & cancle the * they cancle each other
+    printf("The value of i is %d\n", **(&j));
+return 0;
+}
